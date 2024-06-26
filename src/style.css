@@ -3,21 +3,33 @@
 }
 
 .box {
-    height: 20rem;
-    width: 20rem;
+    height: 10rem;
+    width: 10rem;
     border: 1px solid black;
     display: inline-block;
     margin-right: 4px;
     border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Word,.Emoji {
+    text-align: center;
+    width: 100%;
 }
 
 .Word {
-    font-size: 8rem;
-    text-align: center;
+    font-size: 1.75rem;
+    padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+
 }
 
 .Emoji {
-    font-size: 12rem;
-    text-align: center;
+    font-size: 5rem;
+    padding: 1.75rem;
+
 }

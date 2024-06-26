@@ -50,14 +50,14 @@ export default [
     {
         id: 9,
         on: false,
-        word: "ice cream",
+        word: "ice-cream",
         emoji: "🍦",
     },
     {
         id: 10,
         on: false,
         word: "jellyfish",
-        emoji: "🎐",
+        emoji: "🪼",
     },
     {
         id: 11,
@@ -80,8 +80,8 @@ export default [
     {
         id: 14,
         on: false,
-        word: "nest",
-        emoji: "🐦",
+        word: "nose",
+        emoji: "👃",
     },
     {
         id: 15,
@@ -98,8 +98,8 @@ export default [
     {
         id: 17,
         on: false,
-        word: "quilt",
-        emoji: "🪡",
+        word: "queen",
+        emoji: "👸",
     },
     {
         id: 18,
