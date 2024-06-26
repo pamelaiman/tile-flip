@@ -1,12 +1,14 @@
-import { DemonstratingProps } from "./components/demo/DemonstratingProps";
+import Boxes from "./Boxes";
+import Box from "./Box";
+import { useState } from "react";
+import "./style.css";
 
-function App() {
-    return (
-        <div>
-            <h1>App component</h1>
-            <DemonstratingProps />
-        </div>
-    );
+export default function App() {
+    const [squares, setSquares] = useState(Boxes);
+
+    const squareElements = squares.map((square) => (
+        <Box key={square.id} on={square.on} />
+    ));
+
+    return <main>{squareElements}</main>;
 }
-
-export default App;
