@@ -1,14 +1,19 @@
 import { useState } from "react";
 
 export default function Box(props) {
-    const [isFilled, setIsFilled] = useState(props.on);
+    const [showWord, setShowWord] = useState(props.on);
 
-    function flip() {
-        setIsFilled(!isFilled);
+    function flipCard() {
+        setShowWord(!showWord);
     }
-    const styles = {
-        backgroundColor: isFilled ? "#222222" : "transparent",
-    };
 
-    return <div onClick={flip} style={styles} className="box"></div>;
+    return (
+        <div onClick={flipCard} className="box">
+            {showWord ? (
+                <div className="Word">{props.word}</div>
+            ) : (
+                <div className="Emoji">{props.emoji}</div>
+            )}
+        </div>
+    );
 }
