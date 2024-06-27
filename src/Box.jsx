@@ -10,9 +10,9 @@ export default function Box(props) {
     return (
         <div onClick={flipCard} className="box">
             {showWord ? (
-                <div className="Word">{props.word}</div>
-            ) : (
                 <div className="Emoji">{props.emoji}</div>
+            ) : (
+                <div className="SpanishWord">{props.spanishword}</div>
             )}
         </div>
     );

@@ -13,23 +13,23 @@
     align-content: center;
     align-items: center;
     text-align: center;
+    background-color: yellow;
 }
 
-.Word,.Emoji {
+.Emoji,.SpanishWord {
     text-align: center;
     width: 100%;
 }
 
-.Word {
+.SpanishWord, h1 {
     font-size: 1.75rem;
-    padding: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif
+}
 
+h1 {
+    text-align: center;
 }
 
 .Emoji {
-    font-size: 5rem;
-    padding: 1.75rem;
-
+    font-size: 3rem;
 }

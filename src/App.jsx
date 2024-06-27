@@ -10,10 +10,15 @@ export default function App() {
         <Box
             key={square.id}
             on={square.on}
-            word={square.word}
             emoji={square.emoji}
+            spanishword={square.spanishword}
         />
     ));
 
-    return <main>{squareElements}</main>;
+    return (
+        <main>
+            <h1>Flip the card!</h1>
+            {squareElements}
+        </main>
+    );
 }
